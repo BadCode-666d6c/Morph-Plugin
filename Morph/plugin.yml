@@ -1,0 +1,61 @@
+main: core.Main
+name: Morph
+version: 1.0
+author: O.o
+api-version: 1.13
+commands:
+ morph:
+  permission: morph
+  permission-message: You do not have permission!
+permissions:
+ morph.cow:
+  default: op
+ morph.wither:
+  default: op
+ morph.blaze:
+  default: op
+ morph.bat:
+  default: op
+ morph.cat:
+  default: op
+ morph.ghast:
+  default: op
+ morph.bee:
+  default: op
+ morph.creeper:
+  default: op
+ morph.sheep:
+  default: op
+ morph.chicken:
+  default: op
+ morph.llama:
+  default: op
+ morph.skeleton:
+  default: op
+ morph.zombie:
+  default: op
+ morph.squid:
+  default: op
+ morph.glowsqiud:
+  default: op
+ morph.villager:
+  default: op
+ morph.*:
+  default: op
+  children: 
+   morph.cow: true
+   morph.wither: true
+   morph.blaze: true
+   morph.bat: true
+   morph.cat: true
+   morph.ghast: true
+   morph.bee: true
+   morph.creeper: true
+   morph.sheep: true
+   morph.chicken: true
+   morph.llama: true
+   morph.skeleton: true
+   morph.zombie: true
+   morph.glowsqiud: true
+   morph.sqiud: true
+   morph.villager: true
