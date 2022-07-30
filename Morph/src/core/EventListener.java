@@ -2,7 +2,7 @@ package core;
 
 
 import org.bukkit.Material;
-import org.bukkit.craftbukkit.v1_18_R1.entity.CraftPlayer;
+import org.bukkit.craftbukkit.v1_18_R2.entity.CraftPlayer;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.EntityType;
 import org.bukkit.entity.LivingEntity;
@@ -25,7 +25,6 @@ import org.bukkit.event.player.PlayerRespawnEvent;
 import org.bukkit.event.player.PlayerToggleSneakEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.util.Vector;
-
 import net.minecraft.network.protocol.game.PacketPlayOutPlayerInfo;
 import net.minecraft.network.protocol.game.PacketPlayOutPlayerInfo.EnumPlayerInfoAction;
 
@@ -100,6 +99,7 @@ public class EventListener implements Listener {
     		if(Var.ActiveMorphs.containsKey(p2)) {
     		p.hidePlayer(p2);
     		((CraftPlayer) p).getHandle().b.a(new PacketPlayOutPlayerInfo(EnumPlayerInfoAction.a, ((CraftPlayer) p2).getHandle()));
+    			
     		}
     	
     			
